@@ -17,12 +17,6 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ed526f9314.js" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function(){
-            $("#nav-placeholder").load("menu.html");
-        });
-    </script>
-
     <style type="text/css">
     	.title {
     		font-family: 'Heebo', sans-serif;
@@ -45,6 +39,11 @@
   	<div class="container">
 
   		<div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("menu.html");
+            });
+        </script>
 
         <div class="row" style="margin-top: 2em;">
             <div class="col-sm-3">
