@@ -19,19 +19,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
     <style type="text/css">
-        p, ul, li, h3, h4 {
-              font-family: 'Roboto', sans-serif;
-              color: #555;
+        p, ul, li, h1, h3, h4 {
+            font-family: 'Roboto', sans-serif;
+            color: #555;
         } 
-        .bw {
-          -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-          filter: grayscale(100%);
-          max-height: 20em;
-          object-fit: cover;
+        .card-img {
+            max-height: 20em;
+            object-fit: cover;
+        }
+        .card{
+            filter: grayscale(100%);
+        }
+        .card:hover{
+            transform: scale(1.02);
+            transition: .3s ease;
+            filter: grayscale(0%);
+        }
+        .card-title{
+            font-size: 1.7em; 
+            -webkit-text-stroke: 0.6px black;
         }
     </style>
 
-    <title>A Robotics Enthusiast</title>
+    <title>Tommaso Proietti</title>
   </head>
   <body>
 
@@ -44,233 +54,58 @@
         <div class="row" style="margin-top: 2em;">
 
             <div class="col-sm-12">
-                <h3>Research</h3>
-                <p>Click on the research to learn more <i class="fas fa-search-plus"></i></p>
+                <h1>Research</h1>
             </div>
 
         </div>
 
-        <script>
-          function myFunction(id,type) {
-            if (type == 1){
-              for (var i = 1; i < 9; i++) {
-                if (i == id){
-                  document.getElementById(i).style.display = "block";
-                }
-                else{
-                  document.getElementById(i).style.display = "none";
-                }
-              }
-            }
-            else{
-              for (var i = 1; i < 9; i++) {
-                if (i < 5){
-                  document.getElementById(i).style.display = "block";
-                }
-                else{
-                  document.getElementById(i).style.display = "none";
-                }
-              }
-            }
-          }
-        </script>
 
+        <div class="row" style="margin-top: 2em;">
 
-      <div class="row" style="margin-top: 2em;">
-
-        <div class="col-sm-6  mb-3" id="1">
-          <a href="#" onclick="myFunction(5,1)">
-          <div class="card bg-dark text-white">
-            <img src="img/wearable2.jpg" class="card-img bw">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Soft Wearable Robotics</h5>
-            </div>
-          </div>
-          </a>
+        <div class="col-sm-6  mb-3">
+            <a href="res_softwearable.html">
+                <div class="card bg-dark text-white">
+                    <img src="img/wearable2.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Soft Wearable Robotics</h5>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="col-sm-6  mb-3" id="2">
-          <a href="#" onclick="myFunction(6,1)">
-          <div class="card bg-dark text-white">
-            <img src="img/hriproject.png" class="card-img bw">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Physical Human-Robot Interaction</h5>
-            </div>
-          </div>
-          </a>
+        <div class="col-sm-6  mb-3">
+            <a href="res_phri.html">
+                <div class="card bg-dark text-white">
+                    <img src="img/hriproject.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Physical Human-Robot Interaction</h5>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="col-sm-6  mb-3" id="3">
-          <a href="#" onclick="myFunction(7,1)">
-          <div class="card bg-dark text-white">
-            <img src="img/hybrid-manipulation.png" class="card-img bw">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Dynamic Nonprehensile Manipulation</h5>
-            </div>
-          </div>
-          </a>
+        <div class="col-sm-6  mb-3">
+            <a href="res_manipulation.html">
+                <div class="card bg-dark text-white">
+                    <img src="img/hybrid-manipulation.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Dynamic Nonprehensile Manipulation</h5>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="col-sm-6 mb-3" id="4">
-          <a href="#" onclick="myFunction(8,1)">
-          <div class="card bg-dark text-white">
-            <img src="img/minorproject.png" class="card-img bw">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Minor Projects</h5>
-            </div>
-          </div>
-          </a>
+        <div class="col-sm-6 mb-3">
+            <a href="res_others.html">
+                <div class="card bg-dark text-white">
+                    <img src="img/minorproject.png" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Other Projects</h5>
+                    </div>
+                </div>
+            </a>
         </div>
 
-      </div>
-
-
-
-        <div class="row" id="5" style="display:none;">
-          <div class="col-sm-12">
-            <a href="#" onclick="myFunction(1,2)" class="float-right">Close Research Item <i class="far fa-times-circle"></i></a>
-            <h3>Soft Wearable Robotics</h3>
-            <h5>Pushing further robotic assistance by truly portable and lightweight devices</h5>
-            
-            <p>At Harvard, I'm still working on wearable robotics, this time in the field of soft robotics. <b>Soft Exosuits</b> are a promising and quite new paradigm within the wearable robotics domain: the novelty when compared to rigid exoskeletons is that the frame of the robot is the wearers own skeletal structure. By reducing mechanical links and rigid connections, these devices result lighter and usually more portable. This is actually very useful for applications like rehabilitation robotics, where one of the most limiting factor is considered the amount of time the robotic-therapy can be provided. If we are able to develop truly portable devices, lighter devices that can be worn for longer time, and potentially cheaper devices, using textile-based pneumatic actuation or cable-drive one, we can imagine the use of these devices by impaired people even at their own houses. The robotic therapy could last multiple hours per day, instead of few hours per week!</p>
-
-            <p>The field is quite young and lot of works needs to be done. At Harvard, I'm leading, under the mentoring of Prof. Walsh, a group of people working in the field of medical exosuits for assisting the upper-limb of people who have physical disabilities. A real 360&#176; collaboration, involving mechanical engineers, occupational therapists, apparel designers and many more.</p>
-
-            <p>I'm developing sensing strategy, controls, virtual interfaces firsthand. At the same time, I'm collaborating with graduate students, undergrads, other postdocs in other projects to improve the technology that has been developed here at Conor's lab in order to show the efficacy of our solutions and as soon as possible, try to translate this research findings into the real world by creating a real device. This is the final goal of Prof. Walsh lab and I'm very much excited and engaged about making a real impact for people in needs.</p>
-
-            <div class="row">
-              <div class="offset-sm-2 col-sm-8">
-                <video controls class="w-100">
-                  <source src="videos/RobosoftVideo.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            
-            <p>The video is the outcome of the first work I did with my group. We tested our prototype on several stroke individuals and assisted our therapist while she was performing usual rehabilitation exercise. We were able to observe reduction in her muscle activity and therefore less fatigue. Potentially, by using this device we could already increase the number of hours spent doing rehabilitation in clinics!</p>
-
-            <p>I'll try to keep this page updated, but for the latest news on this topic, keep an eye on my <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ" target="blank">Google Scholar profile</a>: for sure the most updated source of information.</p>
-
-            <h5 style="margin-top: 2em;">Main Publications</h5>
-            <ul>
-              <li>O’Neill C.*, <b>Proietti T.*</b>, Nuckols K., Clarke M., Hohimer C., Cloutier A., Lin D., Walsh C. (2020) <i>“Inflatable soft wearable robot for reducing therapist fatigue during upper extremity rehabilitation in severe stroke”</i>, IEEE Robotics and Automation Letters (RA-L), vol. 5:3, pp. 3899-3906. <a href="https://www.researchgate.net/publication/340114059_Inflatable_Soft_Wearable_Robot_for_Reducing_Therapist_Fatigue_During_Upper_Extremity_Rehabilitation_in_Severe_Stroke" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AY0pCki6q_DkC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-            </ul>
-
-            <p>*Authors equal contribution <br></p>
-          </div>
-        </div>
-
-        <div class="row" id="6" style="display:none; margin-bottom: 3em;">
-          <div class="col-sm-12">
-            <a href="#" onclick="myFunction(1,2)" class="float-right">Close Research Item <i class="far fa-times-circle"></i></a>
-            <h3>Physical Human-Robot Interaction</h3>
-            <h5>Understanding the mutual adaptation between human body and robot</h5>
-
-            <p>During my Ph.D., I focused on studying PHRI to understand the best approach to control wearable robots, in particular when applying robotics to physical rehabilitation. While numerous robotic exoskeletons have been developed for neurorehabilitation in recent years, the few clinical results obtained so far do not exhibit better performance than standard care. Often, planar robots only controlling the hand movements are performing better than multi-joint exoskeletons.</p>
-
-            <p>I believe one important feature which could unleash the potentiality of rehabilitation robotics is <b>adaptation</b>.</p>
-
-            <p>During rehabilitation, therapists naturally adapt to the patient capabilities by varying the interaction forces with the patients limb and the rehabilitation exercises. A key to improve the efficacy of the therapy is to learn from their example: adapt the assistance provided by the robot to maximize subjects' engagement and physical effort and have the robotic therapy to evolve with the patient recovery.</p>
-
-            <p>With this in mind, I aimed at better understanding the process of reciprocal adaptation (robot adapting to the human behavior, human adapting to the robot action) in a context of physical human-robot interaction. This can help developing efficient solutions to guide the robot, and, at the same time, help understanding the way the motor behavior learns from the robot action and transfers adapted behaviors beyond the robot training.</p>
-
-            <div class="text-center">
-              <img src="img/adaptation.png" style="max-height: 15em;"  class="img-fluid">
-            </div>
-
-            <p>An interesting result from my work is shown in the video. We exposed healthy individuals free motions to distributed resistive viscous force fields, generated by the exoskeleton at the joint level, to produce specific inter-joint coordination and analyze the effects of this exposition. Clearly, we observed important inter-individual difference (adaptation to the fields in less than a quarter of the participants) but post-effects and persisting retention of these in time were observed in over 85% of the subjects, together with spatial generalization, and, preliminarily, transfer of the effects when moving outside of the exoskeleton.</p>
-            
-            <div class="row">
-              <div class="offset-sm-2 col-sm-8">
-                <video controls class="w-100">
-                  <source src="videos/KSC_Sebastien_blurred.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-
-
-            <h5 style="margin-top: 2em;">Main Publications</h5>
-            <ul>
-              <li><b>Proietti T.</b> Guigon E., Roby-Brami A., and Jarrassé N. (2017) <i>“Modifying upper-limb inter-joint coordination in healthy subjects by training with a robotic exoskeleton”</i>, Journal of NeuroEngineering and Rehabilitation (JNER), vol. 14. pp. 55. <a href="https://www.researchgate.net/publication/317614573_Modifying_upper-limb_inter-joint_coordination_in_healthy_subjects_by_training_with_a_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AqjMakFHDy7sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-              <li><b>Proietti T.</b>, Roby-Brami A., and Jarrassé N. (2017) <i>“Comparison of different error signals driving the adaptation in assist-as-needed controllers for neurorehabilitation with an upper-limb robotic exoskeleton”</i>, IEEE International Conference on Robotics and Automation (ICRA17, Singapore), pp. 6645-6650. <a href="https://www.researchgate.net/publication/314118796_Comparison_of_different_error_signals_driving_the_adaptation_in_assist-as-needed_controllers_for_neurorehabilitation_with_an_upper-limb_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A2osOgNQ5qMEC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-              <li><b>Proietti T.</b>, Roby-Brami A., Jarrassé N. (2016) <i>“Learning motor coordination under resistive viscous force fields at the joint level with an upper-limb robotic exoskeleton”</i>, 3rd International Conference on NeuroRehabilitation (ICNR16, Segovia, Spain), in Converging Clinical and Engineering Research on Neurorehabilitation II, pp. 1175-1179, Springer International Publishing. <a href="https://www.researchgate.net/publication/309092859_Learning_Motor_Coordination_Under_Resistive_Viscous_Force_Fields_at_the_Joint_Level_with_an_Upper-Limb_Robotic_Exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A9yKSN-GCB0IC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-              <li><b>Proietti T.</b>, Jarrassé N., Roby-Brami A., and Morel G. (2015) <i>“Adaptive control of a robotic exoskeleton for neurorehabilitation”</i>, 7th International IEEE/EMBS Conference on Neural Engineering (NER15, Montpellier, France), pp. 803-806. <a href="https://www.researchgate.net/publication/283002395_Adaptive_control_of_a_robotic_exoskeleton_for_neurorehabilitation" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au-x6o8ySG0sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-              <li>Jarrassé N., <b>Proietti T.</b>, Crocher V., Robertson J., Sahbani A., Morel G. and Roby-Brami A. (2014) <i>“Robotic exoskeletons: a perspective for the rehabilitation of arm coordination in stroke patients”</i>, Frontiers in Human Neuroscience, vol. 8:947, pp. 1-10. <a href="https://www.researchgate.net/publication/269076662_Robotic_Exoskeletons_A_Perspective_for_the_Rehabilitation_of_Arm_Coordination_in_Stroke_Patients" target="blank"><i class="far fa-file-pdf"></i></a> <a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au5HHmVD_uO8C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-            </ul>
-
-          </div>
-        </div>
-
-        <div class="row" id="7" style="display:none;">
-          <div class="col-sm-12">
-            <a href="#" onclick="myFunction(1,2)" class="float-right">Close Research Item <i class="far fa-times-circle"></i></a>
-            <h3>Dynamic Nonprehensile Manipulation</h3>
-            <h5>Transferring objects in the space just exploiting kinematics</h5>
-
-            <p>Dynamic Nonprehensile Manipulation is the ability to transfer objects in the space by using a manipulator (e.g. a robotic hand) without using fingers, grippers, or any kind of tool useful to hold static equilibrium among the manipulator and objects during the full motion.</p> 
-
-            <p>The advantage of this manipulation is that we can minimize the complexity of robot hardware and generally obtain less expensive robotic systems. Of course, the shortcoming is that modeling the dynamics of the system and utilizing contact forces to exploit dynamic effects increase exponentially the complexity of planning and control.</p>
-
-            <div class="text-center">
-              <img src="img/planning.png" class="img-fluid" style="max-height: 15em;">
-            </div>
-
-            <p>Nonprehensile Manipulation uses motion primitives such as rolling, sliding, pushing, throwing, etc. During the time spent at the Northwestern University for my Master thesis, we focused on a case-study of nonprehensile manipulation: we used a 3-DOF flat robotic manipulator to control a rectangular object on a frictionless plane under the effect of gravity. I dealt with defining and classifying every feasible contact combination between object and manipulator, and then used the theory of hybrid automata to model the collection of states and transitions between contact modes. The result was the generation of this complex topology.</p>
-
-            <div class="text-center">
-              <img src="img/topology.png" class="img-fluid">
-            </div>
-
-            <p>After modeling the system, I addressed the problem of trajectory planning by designing a hierarchical two-level planner: the high-level planner, sequence planner, that manages to find a feasible sequence of contact modes as well as conditions of transition between modes, and a low-level planner, contact mode planner, that takes care of planning trajectory within single contact modes. The thesis ended with some simulations in Matlab in order to show the performance of our solution.</p>
-
-            <div class="row">
-              <div class="col-sm-4">
-                <video controls>
-                  <source src="videos/Grasp_to_Roll.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="col-sm-8">
-                <img src="img/dyngrasptoroll.png" class="img-fluid">
-              </div>
-            </div>
-
-            <p>I'm happy to notice that years after my thesis, they still used parts of my work to publish a <a href="https://scholar.google.com/scholar?as_epq=&as_eq=&as_occt=any&as_oq=&as_publication=&as_q=%22Planning%20and%20Control%20for%20Dynamic%2C%20Nonprehensile%2C%20and%20Hybrid%20Manipulation%20Tasks%22%20&as_sauthors=%22Woodruff%2C%20J.%20Z.%20%22&as_sdtAAP=1&as_sdtp=1&as_yhi=&as_ylo=&btnG=Search%2BScholar&inst=7575085548378563675" target="blank"> paper</a> where they were able to run a real-time experiment of a nonprehensile manipulation. Very cool! More info <a href="https://robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/hybrid-manipulation-planning-and-control.html" target="blank">here</a>.</p>
-
-          </div>
-        </div>
-
-        <div class="row" id="8" style="display:none;">
-          <div class="col-sm-12">
-            <a href="#" onclick="myFunction(1,2)" class="float-right">Close Research Item <i class="far fa-times-circle"></i></a>
-            <h3>Minor Projects</h3>
-
-            <h5 style="margin-top: 2em;">Modeling composability in embedded system through hybrid automata</h5>
-            <p>For my BS thesis, I used the Hybrid Automata theory to model and simulate the feature of composability in an embedded system. Composability is a system design principle that concerns the inter-relationships of components and the additional properties that this may cause. The work was within the <i>Artemis pShield</i>, a FP7 European Project whose target was to address Security, Privacy and Dependability (SPD) in the context of Embedded Systems as <i>built-in</i> rather than as <i>add-on</i> functionalities. For the thesis, I built a vertical controller (the <i>Overlay</i>) in a multi-layer architecture and simulated its behavior through Simulink-Stateflow.</p>
-            <div class="row">
-              <div class="col-sm-12">
-                <img src="img/composability1.png" class="img-fluid">
-              </div>
-            </div>
-
-            <h5 style="margin-top: 5em;">Semi-autonomous navigation of a humanoid robot</h5>
-            <p>For one of my MS classes, I developed an algorithm of obstacle avoidance for a NAO humanoid consisting of repulsive force fields from NAO's ultrasounds. Together with my teammates, we validated the algorithm both in simulation (ROS + Webots) and on the real robot.</p>
-            <div class="row">
-              <div class="col-sm-5 mb-3 text-right">
-                <img src="img/obstacles.png" class="img-fluid" style="max-height: 20em;">
-              </div>
-              <div class="col-sm-7 mb-3">
-                <img src="img/minorproject.png" class="img-fluid" style="max-height: 20em;">
-              </div>
-            </div>
-
-            <h5 style="margin-top: 5em;">Acting for "Bras de fer" documentary ("La Boite Noire" series)</h5>
-            <p>During my Ph.D., I was asked to act in a French documentary to educate about rehabilitation robotics. Very fun! Where is my Oscar prize?</p>
-            <div class="offset-sm-2 col-sm-8" style="margin-top: 1em;">
-              <video controls class="w-100">
-                <source src="videos/BrasDeFer.mp4" type="video/mp4">
-              </video>
-            </div>
-
-          </div>
         </div>
 
         <div id="footer-placeholder"></div>
