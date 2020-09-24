@@ -29,11 +29,13 @@
         }
         ol {
             list-style: none;
-            counter-reset: cnt;
             margin-left: 1em;
         }
+        ol.journal {counter-reset: cnt 5;}
+        ol.conference {counter-reset: cnt 4;}
+        ol.abstract {counter-reset: cnt 2;}
         ol li {
-            counter-increment: cnt;
+            counter-increment: cnt -1;
             margin-bottom: 0.5em;
             display: inline-block;
             position: relative;
@@ -41,21 +43,18 @@
         ol.conference li:before {
             content: "[C" counter(cnt) "]";
             margin-right: 0.5em;
-            font-weight: bold;
             position: absolute;
             left: -2.5em;
         }
         ol.journal li:before {
             content: "[J" counter(cnt) "]";
             margin-right: 0.5em;
-            font-weight: bold;
             position: absolute;
             left: -2.5em;
         }
         ol.abstract li:before {
             content: "[A" counter(cnt) "]";
             margin-right: 0.5em;
-            font-weight: bold;
             position: absolute;
             left: -2.5em;
         }
@@ -86,13 +85,13 @@
             <div class="col-sm-12" style="margin-top: 2em;">
                 <h4> Journal Papers </h4>
 
-                <ol class="journal">
-                    <li>O’Neill C.*, <b>Proietti T.*</b>, Nuckols K., Clarke M., Hohimer C., Cloutier A., Lin D., Walsh C. (2020) <i>“Inflatable soft wearable robot for reducing therapist fatigue during upper extremity rehabilitation in severe stroke”</i>, IEEE Robotics and Automation Letters (RA-L), vol. 5:3, pp. 3899-3906. <a class="ref" href="https://www.researchgate.net/publication/340114059_Inflatable_Soft_Wearable_Robot_for_Reducing_Therapist_Fatigue_During_Upper_Extremity_Rehabilitation_in_Severe_Stroke" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AY0pCki6q_DkC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-                    <li><b>Proietti T.</b> Guigon E., Roby-Brami A., and Jarrassé N. (2017) <i>“Modifying upper-limb inter-joint coordination in healthy subjects by training with a robotic exoskeleton”</i>, Journal of NeuroEngineering and Rehabilitation (JNER), vol. 14. pp. 55. <a class="ref" href="https://www.researchgate.net/publication/317614573_Modifying_upper-limb_inter-joint_coordination_in_healthy_subjects_by_training_with_a_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AqjMakFHDy7sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-                    <li> <b>Proietti T.</b> Crocher V., Roby-Brami A., and Jarrassé N. (2016) <i>“Upper-limb robotic exoskeletons for neurorehabilitation: a review on control strategies”</i>, IEEE Reviews in Biomedical Engineering, vol. 9, pp. 4-14. <a class="ref" href="https://www.researchgate.net/publication/300081012_Upper-Limb_Robotic_Exoskeletons_for_Neurorehabilitation_A_Review_on_Control_Strategies" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Ad1gkVwhDpl0C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> <br>
+                <ol reversed class="journal">
+                    <li>O’Neill C.*, <b>Proietti T.*</b>, Nuckols K., Clarke M., Hohimer C., Cloutier A., Lin D., and Walsh C. (2020) <i>“Inflatable soft wearable robot for reducing therapist fatigue during upper extremity rehabilitation in severe stroke”</i>, <b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 5:3, pp. 3899-3906. <a class="ref" href="https://www.researchgate.net/publication/340114059_Inflatable_Soft_Wearable_Robot_for_Reducing_Therapist_Fatigue_During_Upper_Extremity_Rehabilitation_in_Severe_Stroke" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AY0pCki6q_DkC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li><b>Proietti T.</b> Guigon E., Roby-Brami A., and Jarrassé N. (2017) <i>“Modifying upper-limb inter-joint coordination in healthy subjects by training with a robotic exoskeleton”</i>, <b>Journal of NeuroEngineering and Rehabilitation (JNER)</b>, vol. 14. pp. 55. <a class="ref" href="https://www.researchgate.net/publication/317614573_Modifying_upper-limb_inter-joint_coordination_in_healthy_subjects_by_training_with_a_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AqjMakFHDy7sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li> <b>Proietti T.</b> Crocher V., Roby-Brami A., and Jarrassé N. (2016) <i>“Upper-limb robotic exoskeletons for neurorehabilitation: a review on control strategies”</i>, <b>IEEE Reviews in Biomedical Engineering</b>, vol. 9, pp. 4-14. <a class="ref" href="https://www.researchgate.net/publication/300081012_Upper-Limb_Robotic_Exoskeletons_for_Neurorehabilitation_A_Review_on_Control_Strategies" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Ad1gkVwhDpl0C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> <br>
                     <span style="color: #c94c4c;"><i class="fas fa-award"></i> IEEE Engineering in Medicine and Biology Prize Paper Award (3rd place)</span>
                     </li>
-                    <li>Jarrassé N., <b>Proietti T.</b>, Crocher V., Robertson J., Sahbani A., Morel G. and Roby-Brami A. (2014) <i>“Robotic exoskeletons: a perspective for the rehabilitation of arm coordination in stroke patients”</i>, Frontiers in Human Neuroscience, vol. 8:947, pp. 1-10. <a class="ref" href="https://www.researchgate.net/publication/269076662_Robotic_Exoskeletons_A_Perspective_for_the_Rehabilitation_of_Arm_Coordination_in_Stroke_Patients" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au5HHmVD_uO8C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>  
+                    <li>Jarrassé N., <b>Proietti T.</b>, Crocher V., Robertson J., Sahbani A., Morel G. and Roby-Brami A. (2014) <i>“Robotic exoskeletons: a perspective for the rehabilitation of arm coordination in stroke patients”</i>, <b>Frontiers in Human Neuroscience</b>, vol. 8:947, pp. 1-10. <a class="ref" href="https://www.researchgate.net/publication/269076662_Robotic_Exoskeletons_A_Perspective_for_the_Rehabilitation_of_Arm_Coordination_in_Stroke_Patients" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au5HHmVD_uO8C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
                 </ol>
 
             </div>
@@ -102,9 +101,9 @@
                 <h4> Conference Papers </h4>
 
                 <ol class="conference">
-                    <li><b>Proietti T.</b>, Roby-Brami A., and Jarrassé N. (2017) <i>“Comparison of different error signals driving the adaptation in assist-as-needed controllers for neurorehabilitation with an upper-limb robotic exoskeleton”</i>, IEEE International Conference on Robotics and Automation (ICRA17, Singapore), pp. 6645-6650. <a class="ref" href="https://www.researchgate.net/publication/314118796_Comparison_of_different_error_signals_driving_the_adaptation_in_assist-as-needed_controllers_for_neurorehabilitation_with_an_upper-limb_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A2osOgNQ5qMEC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-                    <li><b>Proietti T.</b>, Roby-Brami A., Jarrassé N. (2016) <i>“Learning motor coordination under resistive viscous force fields at the joint level with an upper-limb robotic exoskeleton”</i>, 3rd International Conference on NeuroRehabilitation (ICNR16, Segovia, Spain), in Converging Clinical and Engineering Research on Neurorehabilitation II, pp. 1175-1179, Springer International Publishing. <a class="ref" href="https://www.researchgate.net/publication/309092859_Learning_Motor_Coordination_Under_Resistive_Viscous_Force_Fields_at_the_Joint_Level_with_an_Upper-Limb_Robotic_Exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A9yKSN-GCB0IC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-                    <li><b>Proietti T.</b>, Jarrassé N., Roby-Brami A., and Morel G. (2015) <i>“Adaptive control of a robotic exoskeleton for neurorehabilitation”</i>, 7th International IEEE/EMBS Conference on Neural Engineering (NER15, Montpellier, France), pp. 803-806. <a class="ref" href="https://www.researchgate.net/publication/283002395_Adaptive_control_of_a_robotic_exoskeleton_for_neurorehabilitation" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au-x6o8ySG0sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li><b>Proietti T.</b>, Roby-Brami A., and Jarrassé N. (2017) <i>“Comparison of different error signals driving the adaptation in assist-as-needed controllers for neurorehabilitation with an upper-limb robotic exoskeleton”</i>, <b>IEEE International Conference on Robotics and Automation</b> (ICRA17, Singapore), pp. 6645-6650. <a class="ref" href="https://www.researchgate.net/publication/314118796_Comparison_of_different_error_signals_driving_the_adaptation_in_assist-as-needed_controllers_for_neurorehabilitation_with_an_upper-limb_robotic_exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A2osOgNQ5qMEC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li><b>Proietti T.</b>, Roby-Brami A., Jarrassé N. (2016) <i>“Learning motor coordination under resistive viscous force fields at the joint level with an upper-limb robotic exoskeleton”</i>, <b>3rd International Conference on NeuroRehabilitation</b> (ICNR16, Segovia, Spain), in Converging Clinical and Engineering Research on Neurorehabilitation II, pp. 1175-1179, Springer International Publishing. <a class="ref" href="https://www.researchgate.net/publication/309092859_Learning_Motor_Coordination_Under_Resistive_Viscous_Force_Fields_at_the_Joint_Level_with_an_Upper-Limb_Robotic_Exoskeleton" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A9yKSN-GCB0IC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li><b>Proietti T.</b>, Jarrassé N., Roby-Brami A., and Morel G. (2015) <i>“Adaptive control of a robotic exoskeleton for neurorehabilitation”</i>, <b>7th International IEEE/EMBS Conference on Neural Engineering</b> (NER15, Montpellier, France), pp. 803-806. <a class="ref" href="https://www.researchgate.net/publication/283002395_Adaptive_control_of_a_robotic_exoskeleton_for_neurorehabilitation" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au-x6o8ySG0sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
                 </ol>
 
             </div>
@@ -114,7 +113,7 @@
                 <h4> Abstracts </h4>
 
                 <ol class="abstract">
-                    <li><b>Proietti T.</b>,  Parry R., Lejeune F., Roby-Brami A., and Jarrassé N. (2018) <i>“Adaptation of upper limb movement using exoskeleton-based training and transfer of cinematic patterns to unconstrained movement: A preliminary study”</i>, Annals of Physical and Rehabilitation Medicine (12th World Congress of the International Society of Physical and Rehabilitation Medicine, Paris, France), 61:e488. <a class="ref" href="https://www.sciencedirect.com/science/article/pii/S1877065718312120" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26citation_for_view%3DZ2IU3eoAAAAJ%3AIjCSPb-OGe4C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+                    <li><b>Proietti T.</b>,  Parry R., Lejeune F., Roby-Brami A., and Jarrassé N. (2018) <i>“Adaptation of upper limb movement using exoskeleton-based training and transfer of cinematic patterns to unconstrained movement: A preliminary study”</i>, <b>Annals of Physical and Rehabilitation Medicine</b> (12th World Congress of the International Society of Physical and Rehabilitation Medicine, Paris, France), 61:e488. <a class="ref" href="https://www.sciencedirect.com/science/article/pii/S1877065718312120" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26citation_for_view%3DZ2IU3eoAAAAJ%3AIjCSPb-OGe4C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
                 </ol>
 
             </div>
