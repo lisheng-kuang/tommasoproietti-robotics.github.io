@@ -32,8 +32,7 @@
             margin-left: 1em;
         }
         ol.journal {counter-reset: cnt 5;}
-        ol.conference {counter-reset: cnt 4;}
-        ol.abstract {counter-reset: cnt 2;}
+        ol.conference {counter-reset: cnt 5;}
         ol li {
             counter-increment: cnt -1;
             margin-bottom: 0.5em;
@@ -48,12 +47,6 @@
         }
         ol.journal li:before {
             content: "[J" counter(cnt) "]";
-            margin-right: 0.5em;
-            position: absolute;
-            left: -2.5em;
-        }
-        ol.abstract li:before {
-            content: "[A" counter(cnt) "]";
             margin-right: 0.5em;
             position: absolute;
             left: -2.5em;
