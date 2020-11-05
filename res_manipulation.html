@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="keywords" content="Tommaso Proietti, Robotics, Wearable Robotics, Control, Exoskeleton, Exosuit, Soft Robotics, Postdoc, Harvard, UPMC, Sapienza">
-    <meta name="description" content="Personal page of Tommaso Proietti. I'm a postdoct at Harvard University working on Soft Wearable Robotics.">
+    <meta name="description" content="Tommaso's personal website. I'm a postdoc at Harvard University working on Soft Wearable Robotics.">
     <meta name="author" content="Tommaso Proietti">
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -43,23 +43,23 @@
 
           <div class="col-sm-12">
             <h1>Dynamic Nonprehensile Manipulation</h1>
-            <h4>Transferring objects in the space by just exploiting kinematics</h4><br>
+            <h4>Transferring objects in the space by exploiting kinematics only</h4><br>
 
             <p>Dynamic Nonprehensile Manipulation is the ability to transfer objects in the space by using a manipulator (e.g. a robotic hand) without using its fingers, grippers, or any kind of tool useful to hold static equilibrium between the manipulator and the object along the full motion.</p> 
 
-            <p>The advantage of this manipulation is that we can minimize the complexity of the robot hardware and generally obtain less expensive robotic systems. Of course, the shortcoming is that modeling the dynamics of the system and utilizing contact forces to exploit dynamic effects increase exponentially the complexity of planning and control.</p>
+            <p>The advantage of this manipulation is that it can minimize the complexity of the robot hardware and can generally obtain less expensive robotic systems. Of course, the shortcoming is that modeling the dynamics of the system and utilizing contact forces to exploit dynamic effects increase exponentially the complexity of planning and control.</p>
 
             <div class="text-center">
               <img src="img/planning.png" class="img-fluid" style="max-height: 15em;">
             </div>
 
-            <p>Nonprehensile Manipulation uses motion primitives such as rolling, sliding, pushing, throwing, etc. During the time spent at the Northwestern University for my Master thesis, we focused on a case-study of nonprehensile manipulation: we used a 3-DOF flat robotic manipulator to control a rectangular object on a frictionless plane under the effect of gravity. I dealt with defining and classifying every feasible contact combination between object and manipulator, and then used the theory of hybrid automata to model the collection of states and transitions between contact modes. The result was the generation of this complex topology.</p>
+            <p>Nonprehensile manipulation uses motion primitives such as rolling, sliding, pushing, throwing, etc. During the time spent at the Northwestern University for my Master thesis, we focused on a case-study of nonprehensile manipulation: we used a 3-DOF flat robotic manipulator to control a rectangular object on a frictionless plane under the effect of gravity. I dealt with defining and classifying every feasible contact combination between object and manipulator, and then used the theory of hybrid automata to model the collection of states and transitions between contact modes. The result was the generation of this complex topology.</p>
 
             <div class="text-center">
               <img src="img/topology.png" class="img-fluid">
             </div>
 
-            <p>After modeling the system, I addressed the problem of trajectory planning by designing a hierarchical two-level planner: the high-level planner, <i>sequence planner</i>, that manages to find a feasible sequence of contact modes as well as conditions of transition between modes, and a low-level planner, <i>contact mode planner</i>, that takes care of planning trajectory within single contact modes. The thesis ended with some simulations in Matlab in order to show the performance of our solution.</p><br>
+            <p>After modeling the system, I addressed the problem of trajectory planning by designing a hierarchical two-level planner: the high-level planner, <i>sequence planner</i>, that managed to find a feasible sequence of contact modes as well as conditions of transition between modes, and a low-level planner, <i>contact mode planner</i>, that took care of planning trajectory within single contact modes. The thesis ended with some simulations in Matlab in order to show the performance of our solution.</p><br>
 
             <div class="row">
               <div class="col-sm-4">
@@ -72,7 +72,7 @@
               </div>
             </div><br>
 
-            <p>I'm happy to notice that years after my thesis, they still used parts of my work to publish a <a href="https://scholar.google.com/scholar?as_epq=&as_eq=&as_occt=any&as_oq=&as_publication=&as_q=%22Planning%20and%20Control%20for%20Dynamic%2C%20Nonprehensile%2C%20and%20Hybrid%20Manipulation%20Tasks%22%20&as_sauthors=%22Woodruff%2C%20J.%20Z.%20%22&as_sdtAAP=1&as_sdtp=1&as_yhi=&as_ylo=&btnG=Search%2BScholar&inst=7575085548378563675" target="blank"> paper</a> where they were able to run a real-time experiment of a nonprehensile manipulation. Very cool! More info <a href="https://robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/hybrid-manipulation-planning-and-control.html" target="blank">here</a>.</p>
+            <p>I'm happy to notice that years after my thesis, they still used parts of my work to publish a <a href="https://scholar.google.com/scholar?as_epq=&as_eq=&as_occt=any&as_oq=&as_publication=&as_q=%22Planning%20and%20Control%20for%20Dynamic%2C%20Nonprehensile%2C%20and%20Hybrid%20Manipulation%20Tasks%22%20&as_sauthors=%22Woodruff%2C%20J.%20Z.%20%22&as_sdtAAP=1&as_sdtp=1&as_yhi=&as_ylo=&btnG=Search%2BScholar&inst=7575085548378563675" target="blank"> paper</a> where they were able to run a real-time experiment of a nonprehensile manipulation task. Very cool! More info <a href="https://robotics.northwestern.edu/research/topics/dynamic-nonprehensile-manipulation/hybrid-manipulation-planning-and-control.html" target="blank">here</a>.</p>
 
           </div>
         </div>
