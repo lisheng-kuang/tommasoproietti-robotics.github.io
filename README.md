@@ -1,3 +1,4 @@
-# tommasoproietti-robotics.github.io
+# Welcome :)
 
-Personal website of Tommaso Proietti: Postdoctoral Research Fellow at Harvard University.
+Personal website of Tommaso Proietti, postdoctoral research fellow at Harvard University.
+Access the webiste here --> https://tommasoproietti-robotics.github.io/
