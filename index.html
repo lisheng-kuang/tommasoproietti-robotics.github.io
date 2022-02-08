@@ -32,7 +32,7 @@
 			font-weight: bold;
 		}
 		a:hover, a:active {
-			color: #8A2134;
+			color: #1B5B83;
 			transition: all .3s;
 		}
 		a.no_bold:link, a.no_bold:visited {
@@ -40,7 +40,7 @@
 			font-weight: normal;
 		}
 		a.no_bold:hover, a.no_bold:active {
-			color: #8A2134;
+			color: #1B5B83;
 			transition: all .3s;
 		}
 		/* About Me / Interests */
@@ -52,8 +52,8 @@
 			font-family: 'Roboto', sans-serif;
 			font-size: 0.8em;
 			font-weight: normal;
-			box-shadow: 0px 0px 4px #555;
 			margin-right: 0.5em;
+			color: #1B5B83;
 		}
 		.address1 li:before {
 			content: "<i class=\"fas fa-map-marker-alt\"></i>";
@@ -116,9 +116,10 @@
 			max-height: 200px;
 		}
 		.custom{
-			background-color: #8A2134;
+			background-color: #1B5B83;
 			color: white;
-			margin-right: 4px;
+			margin-right: 8px;
+			padding: 0.3em 1em;
 		}
 	</style>
 
@@ -138,6 +139,9 @@
 			<div class="collapse navbar-collapse" id="navbarsExample09">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
+						<a class="nav-link" href="#top">About me</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#res">Research</a>
 					</li>
 					<li class="nav-item">
@@ -145,6 +149,9 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#pubs">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#awa">Awards</a>
 					</li>
 				</ul>
 			</div>
@@ -179,25 +186,30 @@
 			<!-- -------------- About me -------------- -->
 
 			<div class="col-sm-9">
-				<h3>About me</h3>
-				<p>Hello! Welcome to my website. I'm a Postdoctoral Research Fellow working on <b style="color: #8A2134;">Soft Wearable Robotics</b> within the <a href="https://biodesign.seas.harvard.edu/" target="blank">Harvard Biodesign Lab</a> at Harvard University. </p>
+				<h3 style="padding-top: 1em;">About me</h3>
+				<p>Hi! I'm Tommaso, a Postdoctoral Research Fellow working on <b style="color: #8A2134;">Wearable Robotics</b>. Currently, I'm within the <a href="https://biodesign.seas.harvard.edu/" target="blank">Harvard Biodesign Lab</a> at Harvard University since 2019.</p>
 				<p>Before this:
 					<ul style="margin-top: -10px;">
-						<li>I received a Ph.D. in Robotics Engineering from <a href="http://www.isir.upmc.fr/" target="blank">Universit&eacute; Pierre et Marie Curie</a> in 2017.</li>
+						<li>I received a Ph.D. in Robotics Engineering from <a href="http://www.isir.upmc.fr/" target="blank">Universit&eacute; Pierre et Marie Curie - Paris VI</a> in 2017.</li>
 						<li>I received a BS and MS in Control Engineering from <a href="https://www.dis.uniroma1.it/" target="blank">Sapienza University of Rome</a> in 2010 and 2013.</li>
 						<li>I was Visiting Research Fellow in the <a href="https://robotics.northwestern.edu/index.html" target="blank">Neuroscience and Robotics lab</a> at Northwestern University in 2013.</li>
-						<li>I worked as Control System Engineer for General Motors from 2017 to 2019.</li>
+						<li>I worked as Control System Engineer in the automotive sector for General Motors from 2017 to 2019.</li>
 					</ul>
 				</p>
 
-
+				<p>
+					<img src="https://drive.google.com/uc?export=view&id=19nmQPTmBj6kQaHInds1BnfmxeznPR21R" class="img-fluid" style="max-width:23%; margin-right: 1%;">
+					<img src="https://drive.google.com/uc?export=view&id=1ME2cgNHHuTO2fraxTsWBoSiBWjGw_fcn" class="img-fluid" style="max-width:23%; margin-right: 1%;">
+					<img src="https://drive.google.com/uc?export=view&id=18oFPOKtDsSYlVlDbbqr_wJ2o_H1afqDG" class="img-fluid" style="max-width:23%; margin-right: 1%;">
+					<img src="https://drive.google.com/uc?export=view&id=1BVqQ6R6tLMe_iGPpCOf-akmarocR-pLi" class="img-fluid" style="max-width:23%; margin-right: 1%;">
+				</p>
 
 				<!-- -------------- Research Interests -------------- -->
 
 				<h3 style="padding-top: 3em;" id="res">Research Interests</h3>
-				<h5><span class="badge custom">Wearable Robotics</span><span class="badge custom">Soft Robotics</span><span class="badge custom">Biomechanics</span><span class="badge custom">Controls</span></h5>
-				<p>My research interest is to develop cutting edge technology in the domain of wearable robotics for functional movement assistance and/or remote monitoring, by using either traditional rigid robots or more hybrid solutions based on soft robotics. Wearable robotics is a real challenge but it is undeniably going to play a role in our future. Robots that can help and assist people, reduce injuries, improve recovery during rehabilitation, monitor body parameters and early diagnose potential diseases, compensate physical disability in an efficient way, or even "just" assist during fatiguing everyday tasks at home: make life easier!</p>
-				<p>There are several aspects of the human-robot interaction still to address (<i>e.g.</i> complex mechanical coupling with the human body) but I like to focus my efforts on: 
+				
+				<p class="text-justify">My research experience is in the domain of <b>wearable robotics</b>. I'm interested in developing cutting edge technology for functional movement assistance and for remote monitoring, using both traditional rigid robots -- <b>exoskeletons</b> -- and more innovative soft materials -- soft robot or <b>exosuits</b>. Wearable robotics is a very challenging field but it is undeniably that these robots are going to play a role in our future. Robots that can help and assist people, reduce injuries, improve recovery during rehabilitation, monitor body parameters and early diagnose potential diseases, compensate physical disability in an efficient way, or even "just" assist during fatiguing everyday tasks at home: make life easier!</p>
+				<p class="text-justify">There are several aspects of the <b>physical human-robot interaction</b> still to address (<i>e.g.</i> complex mechanical coupling with the human body) but I like to focus my efforts on: 
 				<ul style="margin-top: -10px;">
 					<li>how to design novel solutions to support human movements,</li>
 					<li>how to smartly share the control of the body between the human user and the robot,</li>
@@ -206,7 +218,11 @@
 					<li>how to collect meaningful data from the human-robot interaction.</li>
 				</ul>
 				</p>
-				<p>As any engineer, I'm very interested in solutions that can have a real impact on people, translating out of the academic environment. Thus I'm addressing themes like cost-efficiency (for example through underactuation and minimal amount of sensors), robustness (validating our strategies under unsupervised behaviors by the user in unconstrained environments), and proven usefulness (investigating the effects of a control strategy but also how to properly assess these effects) in my daily activity.</p>
+				<p class="text-justify">As any other engineer, I'm very interested in solutions that can have a real impact on people, <b>translating out of the academic environment</b>. Thus I'm addressing themes like cost-efficiency (<i>e.g.</i> underactuation and minimal amount of sensors), robustness (validating our strategies under unsupervised behaviors by the user, in unconstrained environments), and proven usefulness (<i>e.g.</i> investigating the effects of a control strategy but also how to properly assess these effects) in my daily activity.</p>
+
+				<div class="d-flex  justify-content-center">
+					<h5><span class="badge custom">Wearable Robotics</span><span class="badge custom">Soft Robotics</span><span class="badge custom">Biomechanics</span><span class="badge custom">Controls</span></h5>
+				</div>
 
 				<h5 style="margin-top: 1em;">Gallery</h5>
 				
@@ -312,7 +328,7 @@
 		<div class="row" id="teach" style="padding-top: 7em;">
 
 			<div class="col-sm-9 offset-sm-3">
-				<h3 style="margin-bottom: 2em;">Teaching Experience</h3>
+				<h3 style="margin-bottom: 1em;">Teaching Experience</h3>
 
 				<div class="row">
 					<div class="col-sm-2 mb-3">
@@ -323,7 +339,7 @@
 						<p>
 							<b>Undergraduate/Graduate Students Mentoring</b><br>
 							<a href="https://www.seas.harvard.edu/materials-science-mechanical-engineering" target="blank">BS/Ph.D. in Materials Science and Mechanical Engineering</a>  | Harvard University<br> 
-							Helped in defining and developing research projects, supervised and assisted undergraduate/graduate students working on their projects in the lab. Total mentoring: 4 undergrad students, 6 grad students.
+							<!-- Helped in defining and developing research projects, supervised and assisted undergraduate/graduate students working on their projects in the lab. Total mentoring: 4 undergrad students, 6 grad students. -->
 						</p>
 					</div>
 
@@ -338,7 +354,7 @@
 						<p>
 							<b>Introduction to Robotics - Guest Lecturer</b><br>
 							<a href="https://canvas.harvard.edu/courses/92142" target="blank">BS in Materials Science and Mechanical Engineering</a>  | Harvard University<br> 
-							Presentation at the ES 159/259 class (undergraduate level) of the research we run at the Harvard Biodesign Lab. 
+							<!-- Presentation at the ES 159/259 class (undergraduate level) of the research we run at the Harvard Biodesign Lab.  -->
 						</p>
 					</div>
 				</div>
@@ -352,7 +368,7 @@
 						<p>
 							<b>Physiological Foundations for Bioengineering - Guest Lecturer</b><br>
 							<a href="https://scholar.harvard.edu/lmoyer/classes/es-53-physiological-foundations-bioengineering" target="blank">BS in Biomedical Engineering</a>  | Harvard University<br> 
-							Presentation at the ES 53 class (undergraduate level) of the research we run at the Harvard Biodesign Lab. 
+							<!-- Presentation at the ES 53 class (undergraduate level) of the research we run at the Harvard Biodesign Lab.  -->
 						</p>
 					</div>
 				</div>
@@ -366,7 +382,7 @@
 						<p>
 							<b>Mobile Robotics - Teaching Assistant</b><br>
 							<a href="https://www.polytech.sorbonne-universite.fr/formations/robotique" target="blank">MS in Robotics Engineering</a>  | Polytech Sorbonne<br> 
-							Prepared, supervised, and assisted ~15 graduate students in lab project. Assistance to final project evaluation. The course was provided in French.
+							<!-- Prepared, supervised, and assisted ~15 graduate students in lab project. Assistance to final project evaluation. The course was provided in French. -->
 						</p>
 					</div>
 
@@ -393,7 +409,7 @@
 					*Authors equal contribution <br>
 					<i class="far fa-file-pdf"></i> <i class="fas fa-long-arrow-alt-right"></i> PDF file<br>
 					<i class="ai ai-google-scholar"></i> <i class="fas fa-long-arrow-alt-right"></i> Google Scholar page <br>
-					<i class="fas fa-film"></i> <i class="fas fa-long-arrow-alt-right"></i> Video presentation file <br>
+					<i class="fas fa-film"></i> <i class="fas fa-long-arrow-alt-right"></i> Multimedia <br>
 				</p>
 			</div>
 
@@ -418,7 +434,7 @@
 
 			</div>
 
-			<div class="col-sm-9 offset-sm-3" style="margin-top: 2em;">
+			<div class="col-sm-9 offset-sm-3" style="margin-top: 1em;">
 
 				<h5> Conference Papers </h5>
 
@@ -432,11 +448,41 @@
 			</div>
 
 		</div>
+
+		<!-- -------------- Awards -------------- -->
+
+		<div class="row" id="awa" style="padding-top: 5em; margin-bottom: 2em;">
+
+			<div class="col-sm-9 offset-sm-3">
+				<h3> Awards </h3>
+				<p>
+					<ul>
+						<li>
+							2021 | <b>Cullen Eduction and Research Fund (CERF) Medical Engineering Prize</b> - Co-Writer <br>
+							<i>Source: Cullen Eduction and Research Fund (CERF)<br>
+							Goal: promote research into aspects of muscle atrophy and loss of functionality associated with motor neuron disease / amyotrophic lateral sclerosis (MND/ALS)<br>
+							Value: EUR 500.000</i>
+						</li>
+						<li>
+							2019 | <b>IEEE Engineering in Medicine and Biology Prize Paper Award</b> - 3rd place with [J2] paper <br>
+							<i>Source: IEEE Engineering in Medicine & Biology Society (EMBS)<br>
+							Value: USD 300</i>
+						</li>
+						<li>
+							2014 | <b>Graduate Research Fellowship</b> <br>
+							<i>Source: Région Ile de France (ref. #13020430)<br>
+							Value: EUR 102.200 (3 years)</i>
+						</li>
+					</ul>
+				</p>
+			</div>
+
 		
-	</div>
+		</div>
 
-
-
+		<div class="col-sm-9 offset-sm-3">
+		<p style="font-size: 0.8em;">For any information, do not hesitate to write me. Last update: Feb 2022. </p>
+		</div>
 
   </body>
 </html>
