@@ -1,5 +1,5 @@
-## Welcome :)
+## Ciao
 
-Personal website of Tommaso Proietti, postdoctoral research fellow at Scuola Superiore Sant'Anna in Pisa, Italy.
+This is the personal website of Tommaso Proietti, postdoctoral research fellow at Scuola Superiore Sant'Anna and associate fellow at Harvard University.
 
-Access the webiste here --> https://tommasoproietti-robotics.github.io/
+Please, visit the website by clicking at the following link --> https://tommasoproietti-robotics.github.io/
