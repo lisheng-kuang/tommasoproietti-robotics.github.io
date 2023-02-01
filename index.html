@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 	<meta name="keywords" content="Tommaso Proietti, Robotics, Wearable Robotics, Wearable, Control, Exoskeleton, Exosuit, Soft Robotics, Postdoc, Harvard, UPMC, Sorbonne, sorbonne-universite, Sapienza, SSSA, Sant'Anna, Rehabilitation, Assistive, Assistance">
-	<meta name="description" content="Tommaso Proietti's personal website. I'm a postdoc at SSSA working on Soft Wearable Robotics.">
+	<meta name="description" content="Tommaso Proietti's personal website. I'm Assistant Professor at SSSA and Head of the Soft Bionics Lab.">
 	<meta name="author" content="Tommaso Proietti">
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -27,21 +27,24 @@
 			font-family: 'Roboto', sans-serif;
 			color: #555;
 		} 
-		a:link, a:visited {
-			color: #222;
-			font-weight: bold;
-		}
-		a:hover, a:active {
-			color: #1B5B83;
-			transition: all .3s;
-		}
-		a.no_bold:link, a.no_bold:visited {
+
+
+		a.icons:link, a.icons:visited {
 			color: #555;
 			font-weight: normal;
 		}
-		a.no_bold:hover, a.no_bold:active {
+		a.icons:hover, a.icons:active {
 			color: #1B5B83;
 			transition: all .3s;
+		}
+
+		a:hover, a:active, a:link, a:visited  {
+			color: #1B5B83;
+			font-weight: bold;
+		}
+		a.no_bold:hover, a.no_bold:active, a.no_bold:link, a.no_bold:visited {
+			color: #1B5B83;
+			font-weight: normal;
 		}
 		/* About Me / Interests */
 		.navbar-brand {
@@ -64,8 +67,8 @@
 			margin-left: 1em;
 			font-size: 15px;
 		}
-		ol.journal {counter-reset: cnt 9;}
-		ol.conference {counter-reset: cnt 6;}
+		ol.journal {counter-reset: cnt 9;} /* counters */
+		ol.conference {counter-reset: cnt 6;} /* counters */
 		ol li {
 			counter-increment: cnt -1;
 			margin-bottom: 0.5em;
@@ -151,8 +154,11 @@
 						<a class="nav-link" href="#pubs">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#awa">Awards</a>
+						<a class="nav-link" href="#news">News</a>
 					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="#awa">Awards</a>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -168,11 +174,12 @@
 				<p><img src="https://drive.google.com/uc?export=view&id=1XemLirxxAkaKgGY9-St5ZQ1CQngRkdpl" class="img-fluid w-75 mx-auto d-block d-sm-none"></p>
 				<p><img src="https://drive.google.com/uc?export=view&id=1XemLirxxAkaKgGY9-St5ZQ1CQngRkdpl" class="img-fluid d-none d-sm-block"></p>
 				<p class="text-center">
-					<a href="https://www.researchgate.net/profile/Tommaso_Proietti2" target="blank"><i class="ai ai-researchgate-square ai-2x"></i></a>
-					<a href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ" target="blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
-					<a href="https://orcid.org/0000-0002-8875-8646" target="blank"><i class="ai ai-orcid-square ai-2x"></i></a>
-					<a href="https://www.scopus.com/authid/detail.uri?authorId=57204931689" target="blank"><i class="ai ai-scopus-square ai-2x"></i></a>
-					<a href="https://www.linkedin.com/in/tproietti" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+					<a class="icons" href="https://www.researchgate.net/profile/Tommaso_Proietti2" target="blank"><i class="ai ai-researchgate-square ai-2x"></i></a>
+					<a class="icons" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ" target="blank"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+					<a class="icons" href="https://orcid.org/0000-0002-8875-8646" target="blank"><i class="ai ai-orcid-square ai-2x"></i></a>
+					<a class="icons" href="https://www.scopus.com/authid/detail.uri?authorId=57204931689" target="blank"><i class="ai ai-scopus-square ai-2x"></i></a>
+					<a class="icons" href="https://www.linkedin.com/in/tproietti" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+					<a class="icons" href="https://twitter.com/_tproietti" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
 				</p>
 				<p class="text-center" style="font-size: 0.9em;"><i class="far fa-envelope"></i> tommaso.proietti@santannapisa.it</p>
 				<p class="text-center"><i class="fas fa-map-marker-alt"></i>  <b>The Biorobotics Institute</b><br>Viale Rinaldo Piaggio 34<br>56025, Pontedera (PI), Italy</p>
@@ -186,11 +193,13 @@
 			<div class="col-sm-9">
 				<h3 style="padding-top: 1em;">About me</h3>
 				<p>
-					Hi! I'm Tommaso, Postdoctoral Research Fellow at the <a href="https://www.santannapisa.it/en/institute/biorobotics/biorobotics-institute" target="blank">Biorobotics Institute</a> 
-					of Scuola Superiore Sant'Anna in Pisa, Italy. I'm also Associate Fellow with the <a href="https://biodesign.seas.harvard.edu/" target="blank">Biodesign Lab</a> at Harvard University.
+					Hi! I'm Tommaso, Assistant Professor and Head of the Soft Bionics Lab at the <a href="https://www.santannapisa.it/en/institute/biorobotics/biorobotics-institute" target="blank">
+					Biorobotics Institute</a> of Scuola Superiore Sant'Anna in Pisa, Italy.
 				</p>
 				<p>Before this:
 					<ul style="margin-top: -10px;">
+						<li>I was Postdoctoral Research Fellow at the <a href="https://www.santannapisa.it/en" target="blank">
+						Scuola Superiore Sant'Anna</a> from 2022 to 2023.</li>
 						<li>I was Postdoctoral Research Fellow in the Biodesign Lab at <a href="https://biodesign.seas.harvard.edu/" target="blank">Harvard University</a> from 2019 to 2022.</li>
 						<li>I received a Ph.D. in Robotics Engineering from <a href="http://www.isir.upmc.fr/" target="blank">Universit&eacute; Pierre et Marie Curie (Sorbonne Universit&eacute;)</a> in 2017.</li>
 						<li>I received a B.S. and M.S. in Control Engineering from <a href="https://www.dis.uniroma1.it/" target="blank">Sapienza University of Rome</a> in 2010 and 2013.</li>
@@ -210,38 +219,39 @@
 				</p>
 
 				<p>
-					<div class="text-center" style="margin-top: 20px;">
+					<div class="text-center" style="margin-top: 40px;">
+						<p>Please, consider submitting your work to this Special Issue, where I serve as Guest Editor!</p>
 						<a href="https://www.mdpi.com/journal/machines/special_issues/4O34859K05" target="blank">
-							<img src="https://drive.google.com/uc?export=view&id=1AAMrB34CrES9R0-YgAbLgqqU7x2vQXv7" class="img-fluid" style="max-width:100%;">
+							<img src="https://drive.google.com/uc?export=view&id=1AAMrB34CrES9R0-YgAbLgqqU7x2vQXv7" class="img-fluid" style="max-width:75%;">
 						</a>
 					</div>
 				</p>
 
 				<!-- -------------- Research Interests -------------- -->
 
-				<h3 style="padding-top: 3em;" id="res">Research Interests</h3>
+				<h3 style="padding-top: 3em;" id="res">Research at the <b>Soft Bionics Lab</b></h3>
 				
 				<p class="text-justify">
 					I have been exploring the domain of <b>wearable robotics</b>, using both traditional rigid exoskeletons and new soft exosuits. 
-					My interest is in developing cutting edge technology for <b>functional movement assistance</b> and <b>remote monitoring</b>. 
+					The lab I'm setting up wants to develop cutting-edge technology in the field of soft wearables for <b>functional movement assistance</b> and <b>remote monitoring</b>. 
 					Wearable robotics is a very challenging field and the current technology is still far from being ready to everyday use. 
 					However, it is reasonable to think that these robots are going to play an important role in our future. 
 					Robots that can help people, reduce injuries, improve recovery during rehabilitation, monitor body parameters and early diagnose potential diseases, 
-					compensate physical disability in an efficient way, or even "just" assist during fatiguing everyday tasks at home: make life easier!</p>
+					efficiently compensate for physical disability, or even "just" assist during fatiguing everyday tasks at home: make life easier!</p>
 				<p class="text-justify">
-					There are several aspects of the <b>physical human-robot interaction</b> that still need futher investigation (<i>e.g.</i> complex mechanical coupling with the human body) 
-					but I like to focus my efforts on: 
+					Several aspects of the <b>physical human-robot interaction</b> still need further investigation (<i>e.g.</i> complex mechanical coupling with the human body) 
+					but we will focus our efforts on: 
 					<ul style="margin-top: -10px;">
 						<li>how to design novel solutions to support human movements,</li>
 						<li>how to smartly share the control of the body between the human user and the robot,</li>
-						<li>how to detect and anticipate the user intentions of movement,</li> 
+						<li>how to detect and anticipate the user's intentions of movement,</li> 
 						<li>how to adapt the robot initiative to the different applications and contexts,</li>
 						<li>how to collect meaningful data from the human-robot interaction.</li>
 					</ul>
 				</p>
 				<p class="text-justify">
 					Being an engineer, I'm very interested in solutions that can have a real impact on people, <b>translating out of the academic environment</b>. 
-					Thus I'm always considering themes like cost-efficiency (<i>e.g.</i> underactuation and minimal amount of sensors), robustness (test unsupervised users's behaviors in unconstrained environments), 
+					Thus I'm always considering themes like cost-efficiency (<i>e.g.</i> underactuation and minimal amount of sensors), robustness (testing unsupervised users' behaviors in unconstrained environments), 
 					and proven usefulness (<i>e.g.</i> investigating the effects of a control strategy but also how to properly assess these effects) in my daily activity.
 				</p>
 
@@ -254,28 +264,35 @@
 				<!-- -------------- Thumbnails -------------- -->
 
 				<div class="row mx-0">
-					<div class="col-sm-3 px-1 thumb_custom">
+					<!-- <div class="col-sm-4 px-1 thumb_custom">
+						<img src="https://drive.google.com/uc?export=view&id=1vxtAhfMhOGf0c2mscu4xhj7cXWsFzACt" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal8">
+					</div> -->
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1zRGGT6hNzc72BMSnnb-pbJO_6MzIzxu1" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal7">
 					</div>
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=14RjR6yVdteMnmeSJDl1WPwUWrMxo3jKy" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal6">
 					</div>
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1IvtqUPQsnB9Si1ee14ZMSGr2j6ttchNd" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal1">
+				</div>
+				<div class="row mx-0" style="margin-top: 6px;">
 					</div>
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
+						<img src="https://drive.google.com/uc?export=view&id=1_2LiRojQY_fxug_sPd5Pcp-sOSrCBFKD" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal9">
+					</div>
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1vnpj_4PKAujuMtkqChudzZyFitm5kvnQ" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal4">
 					</div>
-				</div>
-
-				<div class="row mx-0" style="margin-top: 6px;">
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1hV1fHk_3mkpI_OkTyU9kfpkAQyeBI8aJ" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal2">
+				</div>
+				<div class="row mx-0" style="margin-top: 6px;">
 					</div>
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1oNtYx27dzoxgI4fIrCsCP4oVWv0Gyf9r" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal5">
 					</div>
-					<div class="col-sm-3 px-1 thumb_custom">
+					<div class="col-sm-4 px-1 thumb_custom">
 						<img src="https://drive.google.com/uc?export=view&id=1XuFHDn7MRVA2CfZjQ33-hFCmGBfcrRr0" class="img-fluid modal_custom" data-toggle="modal" data-target="#modal3">
 					</div>
 				</div>
@@ -283,6 +300,33 @@
 
 				<!-- -------------- Modal Content -------------- -->
 
+				<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<video controls>
+								 <source src="https://drive.google.com/uc?export=view&id=1c4l5Ma1-ki5tECIBPxOHBS8jN_11OPa0" type="video/mp4">
+								</video>
+								<p class="modal-title">
+									Video presentation for our RA-L paper [J6]. We showed the good performance achieved by our kinematics-based controller for a soft wearable shoulder robot 
+									for assisting industrial tasks.</p>
+						  </div>
+						</div>
+					  </div>
+				
+				<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					  <div class="modal-content">
+							<video controls>
+							<source src="https://drive.google.com/uc?export=view&id=1fbhjHf3Sa5qle5iJ9D7d7Zh-OvQdSmK7" type="video/mp4">
+						   </video>
+							<p class="modal-title">
+								Supplementary material for our <i>Science Trans Med</i> paper [J9]. By using a soft wearable robot, we demonstrated improved motor and functional ability in 10 individuals living
+								with ALS. With only 4kg of weight on the waist, an intuitive control strategy and a battery-powered, fully untethered architecture, this work opens up to future use out 
+								of lab environment.</p>
+					  </div>
+					</div>
+				  </div>
+				
 				<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 					  <div class="modal-content">
@@ -378,36 +422,7 @@
 		<div class="row" id="teach" style="padding-top: 7em;">
 
 			<div class="col-sm-9 offset-sm-3">
-				<h3 style="margin-bottom: 1em;">Teaching Experience</h3>
-
-				<div class="row">
-					<div class="col-sm-2 mb-3">
-						<img src="https://drive.google.com/uc?export=view&id=1At4Kcq0X3_qgo6hU3XdZdsF6iqZ8OcdM" class="img-fluid w-50 mx-auto d-block d-sm-none">
-						<img src="https://drive.google.com/uc?export=view&id=1At4Kcq0X3_qgo6hU3XdZdsF6iqZ8OcdM" class="img-fluid d-none d-sm-block">
-					</div>
-					<div class="col-sm-10 mb-3">
-						<p>
-							<b>Undergraduate/Graduate Students Mentoring | 2022 - ongoing</b><br>
-							<a href="https://www.santannapisa.it/en/training/phd-biorobotics" target="blank">MS in Bionics Engineering, Ph.D. in Biorobotics</a>  | Scuola Superiore Sant'Anna<br> 
-						</p>
-					</div>
-
-				</div>
-
-				<div class="row">
-					<div class="col-sm-2 mb-3">
-						<img src="https://drive.google.com/uc?export=view&id=1BVqQ6R6tLMe_iGPpCOf-akmarocR-pLi" class="img-fluid w-50 mx-auto d-block d-sm-none">
-						<img src="https://drive.google.com/uc?export=view&id=1BVqQ6R6tLMe_iGPpCOf-akmarocR-pLi" class="img-fluid d-none d-sm-block">
-					</div>
-					<div class="col-sm-10 mb-3">
-						<p>
-							<b>Undergraduate/Graduate Students Mentoring | 2019 - 2022</b><br>
-							<a href="https://www.seas.harvard.edu/materials-science-mechanical-engineering" target="blank">BS/Ph.D. in Materials Science and Mechanical Engineering</a>  | Harvard University<br> 
-							<!-- Helped in defining and developing research projects, supervised and assisted undergraduate/graduate students working on their projects in the lab. Total mentoring: 4 undergrad students, 6 grad students. -->
-						</p>
-					</div>
-
-				</div>
+				<h3 style="margin-bottom: 1em;">Teaching</h3>
 
 				<div class="row">
 					<div class="col-sm-2 mb-3">
@@ -418,7 +433,6 @@
 						<p>
 							<b>Introduction to Robotics - Guest Lecturer | 2021</b><br>
 							<a href="https://canvas.harvard.edu/courses/92142" target="blank">BS in Materials Science and Mechanical Engineering</a>  | Harvard University<br> 
-							<!-- Presentation at the ES 159/259 class (undergraduate level) of the research we run at the Harvard Biodesign Lab.  -->
 						</p>
 					</div>
 				</div>
@@ -432,7 +446,6 @@
 						<p>
 							<b>Physiological Foundations for Bioengineering - Guest Lecturer | 2020</b><br>
 							<a href="https://scholar.harvard.edu/lmoyer/classes/es-53-physiological-foundations-bioengineering" target="blank">BS in Biomedical Engineering</a>  | Harvard University<br> 
-							<!-- Presentation at the ES 53 class (undergraduate level) of the research we run at the Harvard Biodesign Lab.  -->
 						</p>
 					</div>
 				</div>
@@ -446,7 +459,6 @@
 						<p>
 							<b>Mobile Robotics - Teaching Assistant | 2015</b><br>
 							<a href="https://www.polytech.sorbonne-universite.fr/formations/robotique" target="blank">MS in Robotics Engineering</a>  | Polytech Sorbonne<br> 
-							<!-- Prepared, supervised, and assisted ~15 graduate students in lab project. Assistance to final project evaluation. The course was provided in French. -->
 						</p>
 					</div>
 
@@ -472,8 +484,6 @@
 				<p>
 					*Authors equal contribution <br>
 					<i class="far fa-file-pdf"></i> <i class="fas fa-long-arrow-alt-right"></i> PDF file<br>
-					<i class="ai ai-google-scholar"></i> <i class="fas fa-long-arrow-alt-right"></i> Google Scholar page <br>
-					<i class="fas fa-film"></i> <i class="fas fa-long-arrow-alt-right"></i> Multimedia <br>
 				</p>
 			</div>
 
@@ -481,24 +491,78 @@
 				<h5> Journal Papers </h5>
 
 				<ol class="journal"> 
+
+					<!-- <li>
+						<u>Proietti T.</u>, O'Neill C., Gerez L., Cole T., Mendelowitz S., Nuckols K., Hohimer C., Lin D., Paganoni S., Walsh C. (2023) 
+						<i>"Restoring arm function with a soft robotic wearable for individuals with amyotrophic lateral sclerosis"</i>, 
+						<b>Science Translational Medicine</b>.
+						<a class="no_bold" href="https://doi.org/10.1126/scitranslmed.add1504" target="blank">10.1126/scitranslmed.add1504</a>
+					</li> -->
 					
-					<li><b>Proietti T.</b>, Ambrosini E., Pedrocchi A., Micera S. (2022) <i>“Wearable Robotics for Impaired Upper-Limb Assistance and Rehabilitation: State of the Art and Future Perspectives”</i>, <b>IEEE Access</b>. <a class="no_bold" href="https://doi.org/10.1109/ACCESS.2022.3210514" target="blank">DOI: 10.1109/ACCESS.2022.3210514</a> <a class="ref" href="https://drive.google.com/file/d/1VJZOo7ex9I78m5VqtHGHTzglON_uGj0K/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.it/citations?view_op=view_citation&hl=it&user=Z2IU3eoAAAAJ&authuser=1&citation_for_view=Z2IU3eoAAAAJ:ufrVoPGSRksC" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						<u>Proietti T.</u>, Ambrosini E., Pedrocchi A., Micera S. (2022) 
+						<i>“Wearable Robotics for Impaired Upper-Limb Assistance and Rehabilitation: State of the Art and Future Perspectives”</i>, 
+						<b>IEEE Access</b>. 
+						<a class="no_bold" href="https://doi.org/10.1109/ACCESS.2022.3210514" target="blank">10.1109/ACCESS.2022.3210514</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1VJZOo7ex9I78m5VqtHGHTzglON_uGj0K/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 
-					<li>Chu X., Lo C., <b>Proietti T.</b>, Walsh C., Au S. (2022) <i>“Opposite Treatment on Null Space: a Unified Control Framework for a Class of Underactuated Robotic Systems with Null Space Avoidance”</i>, <b>IEEE Transactions on Control Systems Technology</b>, pp. 1-15. <a class="no_bold" href="https://doi.org/10.1109/TCST.2022.3171914" target="blank">DOI: 10.1109/TCST.2022.3171914</a> <a class="ref" href="https://drive.google.com/file/d/1k8fAS1qpbcP6w9QnKGs-VPb_SpcmEjpi/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?view_op=view_citation&hl=it&tzom=240&user=Z2IU3eoAAAAJ&citation_for_view=Z2IU3eoAAAAJ:WF5omc3nYNoC" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-					
-					<li>Zhou Y.M., Hohimer C., <b>Proietti T.</b>, O'Neill C. and Walsh C. (2021) <i>“Kinematics-based control of an inflatable soft wearable robot for assisting the shoulder of industrial workers”</i>, <b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 6:2, pp. 2155-2162. <a class="no_bold" href="https://doi.org/10.1109/LRA.2021.3061365" target="blank">DOI: 10.1109/LRA.2021.3061365</a> <a class="ref" href="https://drive.google.com/file/d/1ptkT_OVpuMEaszCSARYEspD4uAZB-mn4/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=it&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Dit%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AYsMSGLbcyi4C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> <a href="https://drive.google.com/file/d/1c4l5Ma1-ki5tECIBPxOHBS8jN_11OPa0/view?usp=sharing" target="blank"><i class="fas fa-film"></i></a> </li>
-
-					<li><b>Proietti T.*</b>, O'Neill C.*, Hohimer C., Nuckols K., Clarke M., Zhou Y.M., Lin D. and Walsh C. (2021) <i>“Sensing and control of a multi-joint soft wearable robot for upper-limb assistance and rehabilitation”</i>, <b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 6:2, pp. 2381-2388. <a class="no_bold" href="https://doi.org/10.1109/LRA.2021.3061061" target="blank">DOI: 10.1109/LRA.2021.3061061</a> <a class="ref" href="https://drive.google.com/file/d/1wlN6U21Y8-vzmlbMdIwplYIxDZ7ChXjW/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=it&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Dit%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AW7OEmFMy1HYC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a>  <a href="https://drive.google.com/file/d/1ds-EYjhD92hECcsMU8vC1PpCdzSvLFp7/view?usp=sharing" target="blank"><i class="fas fa-film"></i></a> </li>
-
-					<li>O’Neill C.*, <b>Proietti T.*</b>, Nuckols K., Clarke M., Hohimer C., Cloutier A., Lin D., and Walsh C. (2020) <i>“Inflatable soft wearable robot for reducing therapist fatigue during upper extremity rehabilitation in severe stroke”</i>, <b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 5:3, pp. 3899-3906. <a class="no_bold" href="https://doi.org/10.1109/LRA.2020.2982861" target="blank">DOI: 10.1109/LRA.2020.2982861</a> <a class="ref" href="https://drive.google.com/file/d/1vnhLgWLWYqVwHkucNY1Xw5DdjF_D4DGI/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AY0pCki6q_DkC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a>  <a href="https://drive.google.com/file/d/1M7-oB2yfDYmZkvuKQKr5jrbaA_LizkJT/view?usp=sharing" target="blank"><i class="fas fa-film"></i></a> </li>
-
-					<li><b>Proietti T.</b>, Guigon E., Roby-Brami A., and Jarrassé N. (2017) <i>“Modifying upper-limb inter-joint coordination in healthy subjects by training with a robotic exoskeleton”</i>, <b>Journal of NeuroEngineering and Rehabilitation (JNER)</b>, vol. 14. pp. 55. <a class="no_bold" href="https://doi.org/10.1186/s12984-017-0254-x" target="blank">DOI: 10.1186/s12984-017-0254-x</a> <a class="ref" href="https://drive.google.com/file/d/1RJl0Uq94OPJum3snEUSGtB4pkMg-kMJX/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3AqjMakFHDy7sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
-					
-					<li><b>Proietti T.</b>, Crocher V., Roby-Brami A., and Jarrassé N. (2016) <i>“Upper-limb robotic exoskeletons for neurorehabilitation: a review on control strategies”</i>, <b>IEEE Reviews in Biomedical Engineering</b>, vol. 9, pp. 4-14. <a class="no_bold" href="https://doi.org/10.1109/RBME.2016.2552201" target="blank">DOI: 10.1109/RBME.2016.2552201</a> <a class="ref" href="https://drive.google.com/file/d/1tjoxhXZXSbkrrxFbXLynBKGgQEz3CjTI/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Ad1gkVwhDpl0C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> <br>
-					<span style="color: #c94c4c;"><i class="fas fa-award"></i> IEEE Engineering in Medicine and Biology Prize Paper Award (3rd place)</span>
+					<li>
+						Chu X., Lo C., <u>Proietti T.</u>, Walsh C., Au S. (2022) 
+						<i>“Opposite Treatment on Null Space: a Unified Control Framework for a Class of Underactuated Robotic Systems with Null Space Avoidance”</i>, 
+						<b>IEEE Transactions on Control Systems Technology</b>, pp. 1-15. 
+						<a class="no_bold" href="https://doi.org/10.1109/TCST.2022.3171914" target="blank">10.1109/TCST.2022.3171914</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1k8fAS1qpbcP6w9QnKGs-VPb_SpcmEjpi/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
 					</li>
 					
-					<li>Jarrassé N., <b>Proietti T.</b>, Crocher V., Robertson J., Sahbani A., Morel G. and Roby-Brami A. (2014) <i>“Robotic exoskeletons: a perspective for the rehabilitation of arm coordination in stroke patients”</i>, <b>Frontiers in Human Neuroscience</b>, vol. 8:947, pp. 1-10.  <a class="no_bold" href="https://doi.org/10.3389/fnhum.2014.00947" target="blank">DOI: 10.3389/fnhum.2014.00947</a>  <a class="ref" href="https://drive.google.com/file/d/1eQ0rom0gcQRQzrZfymcBH5aXg8dwb7_c/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au5HHmVD_uO8C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						Zhou Y.M., Hohimer C., <u>Proietti T.</u>, O'Neill C. and Walsh C. (2021) 
+						<i>“Kinematics-based control of an inflatable soft wearable robot for assisting the shoulder of industrial workers”</i>, 
+						<b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 6:2, pp. 2155-2162. 
+						<a class="no_bold" href="https://doi.org/10.1109/LRA.2021.3061365" target="blank">10.1109/LRA.2021.3061365</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1ptkT_OVpuMEaszCSARYEspD4uAZB-mn4/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
+
+					<li>
+						<u>Proietti T.*</u>, O'Neill C.*, Hohimer C., Nuckols K., Clarke M., Zhou Y.M., Lin D. and Walsh C. (2021) 
+						<i>“Sensing and control of a multi-joint soft wearable robot for upper-limb assistance and rehabilitation”</i>, 
+						<b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 6:2, pp. 2381-2388. 
+						<a class="no_bold" href="https://doi.org/10.1109/LRA.2021.3061061" target="blank">10.1109/LRA.2021.3061061</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1wlN6U21Y8-vzmlbMdIwplYIxDZ7ChXjW/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
+
+					<li>
+						O’Neill C.*, <u>Proietti T.*</u>, Nuckols K., Clarke M., Hohimer C., Cloutier A., Lin D., and Walsh C. (2020) 
+						<i>“Inflatable soft wearable robot for reducing therapist fatigue during upper extremity rehabilitation in severe stroke”</i>, 
+						<b>IEEE Robotics and Automation Letters (RA-L)</b>, vol. 5:3, pp. 3899-3906. 
+						<a class="no_bold" href="https://doi.org/10.1109/LRA.2020.2982861" target="blank">10.1109/LRA.2020.2982861</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1vnhLgWLWYqVwHkucNY1Xw5DdjF_D4DGI/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
+
+					<li>
+						<u>Proietti T.</u>, Guigon E., Roby-Brami A., and Jarrassé N. (2017) 
+						<i>“Modifying upper-limb inter-joint coordination in healthy subjects by training with a robotic exoskeleton”</i>, 
+						<b>Journal of NeuroEngineering and Rehabilitation (JNER)</b>, vol. 14. pp. 55. 
+						<a class="no_bold" href="https://doi.org/10.1186/s12984-017-0254-x" target="blank">10.1186/s12984-017-0254-x</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1RJl0Uq94OPJum3snEUSGtB4pkMg-kMJX/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
+					
+					<li>
+						<u>Proietti T.</u>, Crocher V., Roby-Brami A., and Jarrassé N. (2016) 
+						<i>“Upper-limb robotic exoskeletons for neurorehabilitation: a review on control strategies”</i>, 
+						<b>IEEE Reviews in Biomedical Engineering</b>, vol. 9, pp. 4-14. 
+						<a class="no_bold" href="https://doi.org/10.1109/RBME.2016.2552201" target="blank">10.1109/RBME.2016.2552201</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1tjoxhXZXSbkrrxFbXLynBKGgQEz3CjTI/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a><br>
+						<span style="color: #c94c4c;"><i class="fas fa-award"></i> IEEE Engineering in Medicine and Biology Prize Paper Award (3rd place)</span>
+					</li>
+					
+					<li>
+						Jarrassé N., <u>Proietti T.</u>, Crocher V., Robertson J., Sahbani A., Morel G. and Roby-Brami A. (2014) 
+						<i>“Robotic exoskeletons: a perspective for the rehabilitation of arm coordination in stroke patients”</i>, 
+						<b>Frontiers in Human Neuroscience</b>, vol. 8:947, pp. 1-10.  
+						<a class="no_bold" href="https://doi.org/10.3389/fnhum.2014.00947" target="blank">10.3389/fnhum.2014.00947</a>  
+						<a class="ref" href="https://drive.google.com/file/d/1eQ0rom0gcQRQzrZfymcBH5aXg8dwb7_c/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 				
 				</ol>
 
@@ -510,15 +574,45 @@
 
 				<ol class="conference">
 					
-					<li>Jin Y.*, Zhou Y.M.*, McCann C., <b>Proietti T.</b>, Rycroft C., Walsh C. (2022) <i>A Data-based Approach to Simultaneously Align Both Local and Global Frames between an Inertial Measurement Unit (IMU) and an Optical Motion Capture System</i>, <b>IEEE RAS/EMBS International Conference on Biomedical Robotics & Biomechatronics</b> (BioRob22, Seoul, South Korea).  <a class="no_bold" href="https://doi.org/10.1109/BioRob52689.2022.9925393" target="blank">DOI: 10.1109/BioRob52689.2022.9925393</a> <a class="ref" href="https://drive.google.com/file/d/1Fzx3mFs_SzPohslqBUztfi1QAvpwR6BD/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.it/citations?view_op=view_citation&hl=it&user=Z2IU3eoAAAAJ&authuser=1&citation_for_view=Z2IU3eoAAAAJ:_FxGoFyzp5QC" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						Jin Y.*, Zhou Y.M.*, McCann C., <u>Proietti T.</u>, Rycroft C., Walsh C. (2022) 
+						<i>A Data-based Approach to Simultaneously Align Both Local and Global Frames between an Inertial Measurement Unit (IMU) and an Optical Motion Capture System</i>, 
+						<b>IEEE RAS/EMBS International Conference on Biomedical Robotics & Biomechatronics</b> (BioRob22, Seoul, South Korea).  
+						<a class="no_bold" href="https://doi.org/10.1109/BioRob52689.2022.9925393" target="blank">10.1109/BioRob52689.2022.9925393</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1Fzx3mFs_SzPohslqBUztfi1QAvpwR6BD/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 					
-					<li><b>Proietti T.</b>,  Parry R., Lejeune F., Roby-Brami A., and Jarrassé N. (2018) <i>“Adaptation of upper limb movement using exoskeleton-based training and transfer of cinematic patterns to unconstrained movement: A preliminary study”</i>, <b>Annals of Physical and Rehabilitation Medicine</b> (12th World Congress of the International Society of Physical and Rehabilitation Medicine, Paris, France), 61:e488. <a class="no_bold" href="https://doi.org/10.1016/j.rehab.2018.05.1138" target="blank">DOI: 10.1016/j.rehab.2018.05.1138</a> <a class="ref" href="https://drive.google.com/file/d/11oih2PCfSNhqm8yUrJcvdr3-2tQVIlvg/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26citation_for_view%3DZ2IU3eoAAAAJ%3AIjCSPb-OGe4C%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						<u>Proietti T.</u>,  Parry R., Lejeune F., Roby-Brami A., and Jarrassé N. (2018) 
+						<i>“Adaptation of upper limb movement using exoskeleton-based training and transfer of cinematic patterns to unconstrained movement: A preliminary study”</i>, 
+						<b>Annals of Physical and Rehabilitation Medicine</b> (12th World Congress of the International Society of Physical and Rehabilitation Medicine, Paris, France), 61:e488. 
+						<a class="no_bold" href="https://doi.org/10.1016/j.rehab.2018.05.1138" target="blank">10.1016/j.rehab.2018.05.1138</a> 
+						<a class="ref" href="https://drive.google.com/file/d/11oih2PCfSNhqm8yUrJcvdr3-2tQVIlvg/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 					
-					<li><b>Proietti T.</b>, Roby-Brami A., and Jarrassé N. (2017) <i>“Comparison of different error signals driving the adaptation in assist-as-needed controllers for neurorehabilitation with an upper-limb robotic exoskeleton”</i>, <b>IEEE International Conference on Robotics and Automation</b> (ICRA17, Singapore), pp. 6645-6650. <a class="no_bold" href="https://doi.org/10.1109/ICRA.2017.7989784" target="blank">DOI: 10.1109/ICRA.2017.7989784</a> <a class="ref" href="https://drive.google.com/file/d/1YxAUHJljygh0rijLyM_HCe0jFeX-u31o/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A2osOgNQ5qMEC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						<u>Proietti T.</u>, Roby-Brami A., and Jarrassé N. (2017) 
+						<i>“Comparison of different error signals driving the adaptation in assist-as-needed controllers for neurorehabilitation with an upper-limb robotic exoskeleton”</i>, 
+						<b>IEEE International Conference on Robotics and Automation</b> (ICRA17, Singapore), pp. 6645-6650. 
+						<a class="no_bold" href="https://doi.org/10.1109/ICRA.2017.7989784" target="blank">10.1109/ICRA.2017.7989784</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1YxAUHJljygh0rijLyM_HCe0jFeX-u31o/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 					
-					<li><b>Proietti T.</b>, Roby-Brami A., Jarrassé N. (2016) <i>“Learning motor coordination under resistive viscous force fields at the joint level with an upper-limb robotic exoskeleton”</i>, <b>3rd International Conference on NeuroRehabilitation</b> (ICNR16, Segovia, Spain), in Converging Clinical and Engineering Research on Neurorehabilitation II, pp. 1175-1179, Springer International Publishing. <a class="no_bold" href="https://doi.org/10.1007/978-3-319-46669-9_191" target="blank">DOI: 10.1007/978-3-319-46669-9_191</a> <a class="ref" href="https://drive.google.com/file/d/1Zxah-MMNNeg63BgbC_VnAucI7Z-_cCZO/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3A9yKSN-GCB0IC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						<u>Proietti T.</u>, Roby-Brami A., Jarrassé N. (2016) 
+						<i>“Learning motor coordination under resistive viscous force fields at the joint level with an upper-limb robotic exoskeleton”</i>, 
+						<b>3rd International Conference on NeuroRehabilitation</b> (ICNR16, Segovia, Spain), in Converging Clinical and Engineering Research on Neurorehabilitation II, pp. 1175-1179, Springer International Publishing. 
+						<a class="no_bold" href="https://doi.org/10.1007/978-3-319-46669-9_191" target="blank">10.1007/978-3-319-46669-9_191</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1Zxah-MMNNeg63BgbC_VnAucI7Z-_cCZO/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 					
-					<li><b>Proietti T.</b>, Jarrassé N., Roby-Brami A., and Morel G. (2015) <i>“Adaptive control of a robotic exoskeleton for neurorehabilitation”</i>, <b>7th International IEEE/EMBS Conference on Neural Engineering</b> (NER15, Montpellier, France), pp. 803-806. <a class="no_bold" href="https://doi.org/10.1109/NER.2015.7146745" target="blank">DOI: 10.1109/NER.2015.7146745</a> <a class="ref" href="https://drive.google.com/file/d/1tOCU2gPv_fD1fmC-BE5ybTR31x7DS2UC/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> <a class="ref" href="https://scholar.google.com/citations?user=Z2IU3eoAAAAJ&hl=en&authuser=1#d=gs_md_cita-d&u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DZ2IU3eoAAAAJ%26authuser%3D1%26citation_for_view%3DZ2IU3eoAAAAJ%3Au-x6o8ySG0sC%26tzom%3D240" target="blank"><i class="ai ai-google-scholar"></i></a> </li>
+					<li>
+						<u>Proietti T.</u>, Jarrassé N., Roby-Brami A., and Morel G. (2015) 
+						<i>“Adaptive control of a robotic exoskeleton for neurorehabilitation”</i>, 
+						<b>7th International IEEE/EMBS Conference on Neural Engineering</b> (NER15, Montpellier, France), pp. 803-806. 
+						<a class="no_bold" href="https://doi.org/10.1109/NER.2015.7146745" target="blank">10.1109/NER.2015.7146745</a> 
+						<a class="ref" href="https://drive.google.com/file/d/1tOCU2gPv_fD1fmC-BE5ybTR31x7DS2UC/view?usp=sharing" target="blank"><i class="far fa-file-pdf"></i></a> 
+					</li>
 				
 				</ol>
 
@@ -528,47 +622,56 @@
 
 		<!-- -------------- Awards -------------- -->
 
-		<div class="row" id="awa" style="padding-top: 5em; margin-bottom: 2em;">
+		<!-- <div class="row" id="awa" style="padding-top: 5em; margin-bottom: 2em;">
 
 			<div class="col-sm-9 offset-sm-3">
+
 				<h3> Fellowships and Awards </h3>
 				<p>
 					<ul>
 						<li>
-							2022 | <b>Research Fellowship</b> <br>
-							<i style="font-size: .95em;">Source: The Biorobotics Institute, Scuola Superiore Sant’Anna, Pisa, Italy (ref. #88338-3236)<br>
-							Value: EUR 25.300 (1 year)</i>
+							2022 | <b>Research Fellowship</b> | Scuola Superiore Sant’Anna, Pisa <br>
+							<i style="font-size: .95em;">Value: EUR 25.300 (1 year).</i>
 						</li>
 						<li>
-							2021 | <b>Cullen Eduction and Research Fund (CERF) Medical Engineering Prize</b> - Co-Writer and Project Leader <br>
-							<i style="font-size: .95em;">Source: Cullen Eduction and Research Fund (CERF)<br>
-							Goal: promote research into aspects of muscle atrophy and loss of functionality associated with motor neuron disease / amyotrophic lateral sclerosis (MND/ALS)<br>
-							Value: EUR 500.000</i>
+							2021 | <b>CERF Medical Engineering Prize</b> | Cullen Eduction and Research Fund <br>
+							<i style="font-size: .95em;">Value: EUR 500.000. Co-Writer and Project Leader.</i>
 						</li>
 						<li>
-							2019 | <b>IEEE Engineering in Medicine and Biology Prize Paper Award</b> - 3rd place with [J2] paper <br>
-							<i style="font-size: .95em;">Source: IEEE Engineering in Medicine & Biology Society (EMBS)<br>
-							Value: USD 300</i>
+							2019 | <b>IEEE EMBS Prize Paper Award</b> | IEEE Engineering in Medicine & Biology Society (EMBS)<br>
+							<i style="font-size: .95em;">Value: USD 300. 3rd place with [J2] paper.</i>
 						</li>
 						<li>
-							2014 | <b>Research Fellowship</b> <br>
-							<i style="font-size: .95em;">Source: Région Ile de France (ref. #13020430)<br>
-							Value: EUR 102.200 (3 years)</i>
+							2014 | <b>Research Fellowship</b> | Région Ile de France<br>
+							<i style="font-size: .95em;">Value: EUR 102.200 (3 years).</i>
 						</li>
 						<li>
-							2012 | <b>Research Fellowship</b> <br>
-							<i style="font-size: .95em;">Source: Northwestern University<br>
-							Value: USD 12.600 (6 months)</i>
+							2012 | <b>Research Fellowship</b> | Northwestern University<br>
+							<i style="font-size: .95em;">Value: USD 12.600 (6 months).</i>
 						</li>
 					</ul>
-				</p>
+				</p> 
 			</div>
 
 		
+		</div> -->
+
+		<!-- -------------- News -------------- -->
+
+		<div class="row" id="news" style="padding-top: 5em;">
+
+			<div class="col-sm-9 offset-sm-3">
+
+				<h3> News </h3>
+
+				<a class="twitter-timeline" href="https://twitter.com/_tproietti?ref_src=twsrc%5Etfw">Tweets by _tproietti</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			</div>
+		
 		</div>
 
-		<div class="col-sm-9 offset-sm-3">
-		<p style="font-size: 0.8em;"><a href="https://hits.sh/tommasoproietti-robotics.github.io/"><img alt="Hits" src="https://hits.sh/tommasoproietti-robotics.github.io.svg"/></a> For any information, do not hesitate to write me. Last update: Oct 2022. </p>
+		<div class="col-sm-9 offset-sm-3" style="margin-top: 5em;">
+		<p style="font-size: 0.8em;"><a href="https://hits.sh/tommasoproietti-robotics.github.io/"><img alt="Hits" src="https://hits.sh/tommasoproietti-robotics.github.io.svg"/></a> For any information, do not hesitate to write to me. Last update: Feb 2023. </p>
 		</div>
 
   </body>
